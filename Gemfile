@@ -64,3 +64,8 @@ group :development do
   # gem "spring"
 end
 
+gem 'bootstrap', '~> 5.2', '>= 5.2.3'
+gem 'popper_js', '~> 2.11', '>= 2.11.6'
+gem 'jquery-rails', '~> 4.5', '>= 4.5.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
