@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
+  access all: [:show, :index], site_admin: :all 
+  layout 'product'
 
   # GET /products or /products.json
   def index
