@@ -8,4 +8,8 @@
     <%= link_to 'Services', services_path %>
     <%= link_to 'Lashes', lashes_path %>
     <%= link_to 'Products', products_path %>
+
+    <%= link_to 'Sign up', new_user_registration_path %>
+    <%= link_to 'Log In', new_user_session_path %>
+    <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
 </div>
