@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   resources :products
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/contact'
-  get 'pages/lashcare'
-  get 'pages/faqs'
-  get 'pages/appointments'
-  get 'pages/services'
-  get 'pages/lashes'
+
+  root 'pages#home'
+  get 'about-me', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  get 'lashcare', to: 'pages#lashcare'
+  get 'faqs', to: 'pages#faqs'
+  get 'appointments', to: 'pages#appointments'
+  get 'services', to: 'pages#services'
+  get 'lashes', to: 'pages#lashes'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
