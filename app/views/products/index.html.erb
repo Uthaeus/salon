@@ -1,11 +1,13 @@
 
 <div class='product-container'>
   <h1 class='p-2'>Products</h1>
+  <br />
   <%= link_to "New product", new_product_path if logged_in?(:site_admin) %>
+  <br />
+  <%= paginate @products %>
   <div id="products" class='m-3 row row-cols-2'>
-    <% @products.each do |product| %>
-      <%= render product %>
-    <% end %>
+    <%= render @products %>
   </div>
+  <%= paginate @products %>
 </div>
 
