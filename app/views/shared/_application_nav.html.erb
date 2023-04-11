@@ -1,18 +1,58 @@
-<div>
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'About', about_me_path %>
-    <%= link_to 'Contact', contact_path %>
-    <%= link_to 'Lash Care', lashcare_path %>
-    <%= link_to 'FAQs', faqs_path %>
-    <%= link_to 'Appointments', appointments_path %>
-    <%= link_to 'Services', services_path %>
-    <%= link_to 'Lashes', lashes_path %>
-    <%= link_to 'Products', products_path %>
 
-    <% if logged_in?(:user) %>
-        <%= button_to 'Logout', destroy_user_session_path, method: :delete %>
-    <% else %>
-        <%= link_to 'Sign up', new_user_registration_path %>
-        <%= link_to 'Log In', new_user_session_path %>
-    <% end %>
-</div>
+<header class="py-3 mb-3 border-bottom">
+    <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 2fr 1fr;">
+
+        <div class='container d-flex justify-content-evenly align-items-center'>
+            <%= link_to 'Home', root_path, class: "nav-link px-2 link-secondary" %>
+            <%= link_to 'About', about_me_path, class: "nav-link px-2" %>
+            <%= link_to 'Contact', contact_path, class: "nav-link px-2" %>
+            <%= link_to 'Lash Care', lashcare_path, class: "nav-link px-2" %>
+            <%= link_to 'FAQs', faqs_path, class: "nav-link px-2" %>
+            <%= link_to 'Appointments', appointments_path, class: "nav-link px-2" %>
+            
+
+            <div class="dropdown d-flex nav-link px-2">
+
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Hair</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><%= link_to ' All Services', services_path, class: "dropdown-item" %></li>
+                    <li><a class="dropdown-item" href="#">Cuts</a></li>
+                    <li><a class="dropdown-item" href="#">Colors</a></li>
+                    <li><a class="dropdown-item" href="#">Perm</a></li>
+                    <li><a class="dropdown-item" href="#">Weave</a></li>
+                    <li><a class="dropdown-item" href="#">Highlights</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Eyebrows</a></li>
+                    <li><a class="dropdown-item" href="#">Nails</a></li>
+                    <li><a class="dropdown-item" href="#">Paraffin</a></li>
+                    <li><a class="dropdown-item" href="#">Waxing</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown d-flex nav-link px-2">
+
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Lashes</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><%= link_to 'Lashes', lashes_path, class: "dropdown-item" %></li>
+                    <li><a class="dropdown-item" href="#">Full Set</a></li>
+                    <li><a class="dropdown-item" href="#">2wk Fill</a></li>
+                    <li><a class="dropdown-item" href="#">3wk Fill</a></li>
+                    <li><a class="dropdown-item" href="#">Hybrid</a></li>
+                </ul>
+            </div>
+        </div>
+
+      <div class="d-flex align-items-center justify-content-end">
+        <%= link_to 'Products', products_path, class: "nav-link px-2 mx-2" %>
+
+        <% if logged_in?(:user) %>
+            <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "nav-link px-2 mx-2 logout-btn" %>
+        <% else %>
+            <%= link_to 'Sign up', new_user_registration_path, class: "nav-link px-2 mx-2" %>
+            <%= link_to 'Log In', new_user_session_path, class: "nav-link px-2 mx-2" %>
+        <% end %>
+        <%= link_to 'aslsalon@gmail.com', root_path, class: "nav-link px-2" %>
+        
+      </div>
+    </div>
+  </header>
