@@ -1,14 +1,11 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Products</h1>
-
-<div id="products">
-  <% @products.each do |product| %>
-    <%= render product %>
-    <p>
-      <%= link_to "Show this product", product %>
-    </p>
-  <% end %>
+<div class='product-container'>
+  <h1 class='p-2'>Products</h1>
+  <%= link_to "New product", new_product_path if logged_in?(:site_admin) %>
+  <div id="products" class='m-3 row row-cols-2'>
+    <% @products.each do |product| %>
+      <%= render product %>
+    <% end %>
+  </div>
 </div>
 
-<%= link_to "New product", new_product_path %>

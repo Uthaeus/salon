@@ -7,6 +7,11 @@ body {
     background: linear-gradient(30deg, #F7EDE2, #F5CAC3, #84A59D, #F28482);
 }
 
+.product-container {
+    min-width: 100%;
+    min-height: calc(100vh - 250px);
+}
+
 
 
 
