@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Uthaeus/personal_view_tool
+  revision: a241b6fe6a1d1c7dacdcb3137b090f122e1ddd8e
+  specs:
+    personal_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -232,6 +238,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails (~> 4.5, >= 4.5.1)
   jquery-ui-rails (~> 6.0, >= 6.0.1)
+  personal_view_tool!
   petergate (~> 3.0)
   pg (~> 1.1)
   popper_js (~> 2.11, >= 2.11.6)

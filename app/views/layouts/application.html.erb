@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Salon</title>
+    <%= favicon_link_tag asset_path('favicon.ico'), rel: 'icon' %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,13 +11,19 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+    
+      <%= render 'shared/application_nav' %>
 
-    <%= render 'shared/application_nav' %>
+      <div id='background'></div>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      <div class='container'>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+        <%= yield %>
+      </div>
+
+      <%= render 'shared/application_footer' %>
   </body>
 </html>

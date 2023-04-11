@@ -71,3 +71,4 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'petergate', '~> 3.0'
+gem 'personal_view_tool', git: "https://github.com/Uthaeus/personal_view_tool"
