@@ -1,6 +1,11 @@
 @import 'bootstrap';
 @import './nav.scss';
 
+body {
+    font-family: 'Satisfy', cursive;
+    color: #161616;
+}
+
 .cover-container {
     max-width: 62em;
     min-height: 100vh;
@@ -30,3 +35,22 @@
     color: ivory;
 }
 
+.home-container {
+    min-width: 100%;
+    min-height: calc(100vh - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 4em;
+        color: rgb(139, 135, 135);
+        padding: 10px;
+        margin-right: 2rem;
+    }
+}
+
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Satisfy', cursive;
