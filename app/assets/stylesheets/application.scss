@@ -46,11 +46,60 @@ body {
     h1 {
         font-family: 'Dancing Script', cursive;
         font-size: 4em;
-        color: rgb(139, 135, 135);
+        width: 60%;
+        text-align: left;
+        color: rgb(89, 87, 87);
         padding: 10px;
         margin-right: 2rem;
     }
 }
+
+.about-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-width: 100%;
+    min-height: calc(100vh - 250px);
+
+    .about-img-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-bio-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4em;
+        color: #161616;
+    }
+}
+
+.contact-col-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .contact-item {
+        display: flex;
+        margin: 20px;
+        font-size: 1.6em;
+
+        a {
+            color: rgb(168, 21, 151);
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+
 
 // font-family: 'Dancing Script', cursive;
 // font-family: 'Satisfy', cursive;
