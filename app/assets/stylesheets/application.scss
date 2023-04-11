@@ -88,11 +88,54 @@ body {
         a {
             color: rgb(168, 21, 151);
             transition: 0.2s ease-in-out;
+            text-decoration: none;
 
             &:hover {
                 cursor: pointer;
                 opacity: 0.6;
             }
+        }
+    }
+}
+
+.care-wrapper {
+
+    p {
+        font-size: 1.8em;
+        color: #161616;
+    }
+}
+
+.faqs-wrapper {
+
+    p {
+        font-size: 1.8em;
+        color: #161616;
+    }
+}
+
+.lashes-container {
+    .panel {
+        margin: 20px auto;
+
+        li {
+            font-size: 1.6em;
+            color: #161616;
+        }
+    }
+}
+
+.lashes-container {
+
+    .lash-image-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .lash-image2 {
+            margin: 45px 0;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }
