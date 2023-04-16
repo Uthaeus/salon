@@ -1,10 +1,12 @@
 @import 'bootstrap';
-@import './nav.scss';
+@import 'nav';
 
 body {
     font-family: 'Satisfy', cursive;
     color: #161616;
 }
+
+
 
 .cover-container {
     max-width: 62em;

@@ -1,23 +1,19 @@
 @import 'bootstrap';
 
-.nav-link {
+.link {
     color: rgb(170, 182, 170);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
 }
 
-.form-control-dark {
-    border-color: var(--bs-gray);
-}
-.form-control-dark:focus {
-border-color: #fff;
-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-}
-
-.text-small {
-font-size: 85%;
-}
-
-.dropdown-toggle:not(:focus) {
-outline: 0;
+.active {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 .logout-btn {
