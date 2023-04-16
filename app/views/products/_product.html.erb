@@ -1,16 +1,12 @@
 <div id="<%= dom_id product %>" class='col p-3'>
-  
-  <div class='mb-1'>
-    <%= image_tag product.thumb_image %>
-  </div>
-
-  <div class='w-75'>
-    <hr>
-
-    <div class='d-flex justify-content-between p-2'>
-      
-      <h2><%= link_to product.title, product %></h2>
-      <h4>$<%= product.price %></h4>
+  <div class='prod-item-card'>
+    <div class='mb-1'>
+      <%= image_tag product.thumb_image %>
     </div>
+
+    <hr class='w-75'>
+      
+    <h2><%= link_to product.title, product %></h2>
+    <h4 class='text-end'>$<%= product.price %></h4>
   </div>
 </div>
