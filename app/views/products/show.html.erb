@@ -1,14 +1,14 @@
 <div class='product-container'>
   <div class="row mb-3">
     <div class='col-md-7 mt-5 mx-auto'>
-      <%= image_tag @product.main_image %>
+      <%= image_tag "#{@product.main_image}" %>
     </div>
 
     <div class='col-md-5 mt-5'>
       <h1><%= @product.title %></h1>
       <p><%= @product.description %></p>
       <hr>
-      <h2 class='w-100 text-end'>$<%= @product.price %></h2>
+      <h2 class='w-100 text-end'>$<%= sprintf('%.2f', @product.price) %></h2>
     </div>
     
   </div>
