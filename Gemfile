@@ -73,3 +73,7 @@ gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'petergate', '~> 3.0'
 gem 'personal_view_tool', git: "https://github.com/Uthaeus/personal_view_tool"
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
+gem 'carrierwave', '~> 2.2', '>= 2.2.3'
+gem 'carrierwave-aws', '~> 1.5'
+gem 'dotenv-rails', '~> 2.8', '>= 2.8.1'
+gem 'mini_magick', '~> 4.12'
