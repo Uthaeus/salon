@@ -1,18 +1,18 @@
 databases:
-  - name: aslsalon
-    databaseName: salon_production
-    user: salon_admin
+  - name: mysite
+    databaseName: mysite
+    user: mysite
 
 services:
   - type: web
-    name: aslsalon
+    name: mysite
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: salon_production
+          name: mysite
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
