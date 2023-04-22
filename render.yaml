@@ -1,13 +1,14 @@
 databases:
   - name: asl_db
     plan: free
+    ipAllowList: []
       
 
 services:
   - type: web
     name: rails
     env: ruby
-    ipAllowlist: []
+    ipAllowList: []
     plan: free
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
@@ -20,5 +21,6 @@ services:
         sync: false
   - type: redis
     name: redis
+    ipAllowList: []
     plan: free
     maxmemoryPolicy: noeviction
