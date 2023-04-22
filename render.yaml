@@ -8,7 +8,6 @@ services:
   - type: web
     name: rails
     env: ruby
-    ipAllowList: []
     plan: free
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
