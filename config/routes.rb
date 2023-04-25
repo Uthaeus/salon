@@ -11,8 +11,5 @@ Rails.application.routes.draw do
   get 'services', to: 'pages#services'
   get 'lashes', to: 'pages#lashes'
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  match "*path" => redirect("/"), via: :get
 end
